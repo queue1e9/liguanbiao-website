@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<title>咖啡</title>	
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+<body>
+<div class="content">
+    <div class="header">
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="kafei.html">醇香咖啡</a></li>
+                <li><a href="meishi.html">夏日甜品</a></li>
+                <li><a href="xinwen.html">休闲美食</a></li>
+                <li><a href="liuyan.html">留言板</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="lunbo">   
+        <div class="flashbox">
+            <div id=SwitchBigPic>
+                <div><a href="#"><img class="pic" src="images/coffee2.jpg"></a></div>
+				<div><a href="#"><img class="pic" src="images/tianpin2.jpg"></a></div>
+                <div><a href="#"><img class="pic" src="images/yinpin1.jpg"></a></div>
+				<div><a href="#"><img class="pic" src="images/jingdian1.jpg"></a></div>
+                <div><a href="#"><img class="pic" src="images/haodian1.jpg"></a></div>                           
+            </div>
+            <ul id=SwitchNav>
+                <li><a href="#"><img src="images/coffee2.jpg"><b>浓香咖啡</b></a> </li>
+                <li><a href="#"><img src="images/tianpin2.jpg"><b>夏季甜点</b></a> </li>
+                <li><a href="#"><img src="images/yinpin1.jpg"><b>经典饮品</b></a> </li>
+                <li><a href="#"><img src="images/jingdian1.jpg"><b>美味食品</b></a> </li>
+                <li><a href="#"><img src="images/haodian1.jpg"><b>好店推荐</b></a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+		<div class="meishi">
+        	<div class="title">餐后甜品</div>
+			<ul>
+            	<li>
+                    <img src="images/tianpin3.jpg">
+                    <div>提拉米苏，英文Tiramisu，是一种带咖啡酒味儿的意大利甜点。以马斯卡彭芝士作为主要材料，
+                        再以手指饼干取代传统甜点的海绵蛋糕，加入咖啡、可可粉等其他材料。吃到嘴里香、滑、甜、腻，
+                        柔和中带有质感的变化，味道并不是一味的甜。</div>
+                </li>
+                <li>
+                    <img src="images/tianpin4.jpg">
+                    <div>最早的葡式蛋挞来自英国人Andrew Stow，他在葡萄牙吃到里斯本附近城市Belem的传统点心
+                        Pasteis de Nata后，决定在传统食谱上加进自己的创意，于是1989年在澳门路环岛开设
+                        安德鲁饼店，用猪油、面粉、水和蛋，以及英国式的糕点做法，创作出广受欢迎的葡式蛋挞。
+                        葡式蛋挞（葡挞）是澳门小吃中最有名的，特别讲究烘焙技巧。深受食客喜爱。</div>
+                </li>
+                <li>
+                    <img src="images/tianpin5.jpg">
+                    <div>布丁是一种英国的传统食品。它是以蛋、
+                        面粉与牛奶为材料制造而成的布丁，是由当时的撒克逊人所传授下来的。中世纪的修道院，则把
+                        “水果和燕麦粥的混合物”称为“布丁”。
+                        它与肉汁、果汁、水果干及面粉一起调配制造。17世纪和18世纪的布丁是用蛋、牛奶以及面粉为材料来制作。
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tianpin6.jpg">
+                    <div>红豆沙（又称红豆粥、红豆汤或豆沙糖水）是东亚各国常见的糖水甜品之一，主要材料是红豆和糖。
+                        可以清热解毒、健脾益胃、利尿消肿、通气除烦，可治疗小便不利、脾虚水肿、脚气症等。</div>
+                </li>
+                <li>
+                    <img src="images/tianpin7.jpg">
+                    <div>
+                        芒果西米露是用芒果、西米制作的一道甜品。芒果有祛疾止咳的功效，对咳嗽、痰多、气喘等症有辅助食疗作用。
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tianpin8.jpg">
+                    <div>慕斯的英文是mousse，是一种奶冻式的甜点，可以直接吃或做蛋糕夹层。通常是加入奶油与凝固剂来制成
+                        浓稠冻状的效果，是用明胶凝结乳酪及鲜奶油而成，不必烘烤即可食用。为现今高级蛋糕的代表。夏季要低温冷藏，
+                        冬季无需冷藏可保存3-5天。</div>
+                </li>             
+            </ul>	         
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+	  <script src="js/changimages.js" type=text/javascript></script>
+      <script src="js/prototype.js" type=text/javascript></script>
+      <script>
+        var bigswitch = new SwitchPic(
+            {
+                bigpic:"SwitchBigPic",
+                switchnav:"SwitchNav",
+                selectstyle:"selected",
+                objname:"bigswitch"
+            }
+        ) ;
+        bigswitch.goSwitch(bigswitch,0);
+        bigswitch.autoSwitchTimer = setTimeout("bigswitch.autoSwitch(bigswitch) ;", 3000);
+    </script>
+</body>
+</html>

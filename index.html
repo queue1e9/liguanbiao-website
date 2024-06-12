@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<title>咖啡</title>	
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+<body>
+<div class="content">
+    <div class="header">
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="kafei.html">醇香咖啡</a></li>
+                <li><a href="meishi.html">夏日甜品</a></li>
+                <li><a href="xinwen.html">休闲美食</a></li>
+                <li><a href="liuyan.html">留言板</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="lunbo">   
+        <div class="flashbox">
+            <div id=SwitchBigPic>
+                <div><a href="#"><img class="pic" src="images/coffee2.jpg"></a></div>
+				<div><a href="#"><img class="pic" src="images/tianpin2.jpg"></a></div>
+                <div><a href="#"><img class="pic" src="images/yinpin1.jpg"></a></div>
+				<div><a href="#"><img class="pic" src="images/jingdian1.jpg"></a></div>
+                <div><a href="#"><img class="pic" src="images/haodian1.jpg"></a></div>                           
+            </div>
+            <ul id=SwitchNav>
+                <li><a href="#"><img src="images/coffee2.jpg"><b>浓香咖啡</b></a> </li>
+                <li><a href="#"><img src="images/tianpin2.jpg"><b>夏季甜点</b></a> </li>
+                <li><a href="#"><img src="images/yinpin1.jpg"><b>经典饮品</b></a> </li>
+                <li><a href="#"><img src="images/jingdian1.jpg"><b>美味食品</b></a> </li>
+                <li><a href="#"><img src="images/haodian1.jpg"><b>好店推荐</b></a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="tuijian">
+        	<div class="title">新品推荐 </div>
+			<ul>
+            	<li><a href="kafei.html"><img src="images/coffee1.jpg"><p>醇香咖啡</p></a></li>
+                <li><a href="meishi.html"><img src="images/tianpin1.jpg"><p>夏日甜品</p></a></li>
+                <li><a href="xinwen.html"><img src="images/xiuxianmeishi1.jpg"><p>休闲美食</p></a></li>
+            </ul>
+        </div>
+        <div class="share">
+        	<div class="title">分享到 <a  href="#"><img class=pic src="images/shrae.png" ></a></div>
+            <p>QQ：12345678</p>
+            <p>E-mail：12345678@qq.cc</p>
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+	  <script src="js/changimages.js" type=text/javascript></script>
+      <script src="js/prototype.js" type=text/javascript></script>
+      <script>
+        var bigswitch = new SwitchPic(
+            {
+                bigpic:"SwitchBigPic",
+                switchnav:"SwitchNav",
+                selectstyle:"selected",
+                objname:"bigswitch"
+            }
+        ) ;
+        bigswitch.goSwitch(bigswitch,0);
+        bigswitch.autoSwitchTimer = setTimeout("bigswitch.autoSwitch(bigswitch) ;", 3000);
+    </script>
+</body>
+</html>
